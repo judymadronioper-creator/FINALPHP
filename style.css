@@ -232,3 +232,247 @@ hr { border-color: rgba(148, 163, 184, .18); opacity: 1; }
   .dashboard-stat { min-height: 128px; padding: 1rem; }
   .dashboard-stat-value { font-size: 2rem; }
 }
+
+
+/* =========================================================
+   SERRANO TRADING GARAGE — UI POLISH OVERRIDES
+   These overrides refine the existing dark dashboard theme.
+   ========================================================= */
+
+:root {
+  --stg-bg: #080d18;
+  --stg-panel: #111a2b;
+  --stg-border: rgba(148, 163, 184, .17);
+  --stg-text: #edf4ff;
+  --stg-muted: #9aaac2;
+  --stg-purple: #8065ff;
+  --stg-blue: #348cff;
+  --stg-cyan: #35c9dc;
+}
+
+body {
+  background-color: #080d18;
+  background-image:
+    radial-gradient(ellipse at 0% 0%, rgba(91, 76, 210, .19), transparent 34%),
+    radial-gradient(ellipse at 100% 0%, rgba(24, 153, 190, .13), transparent 30%),
+    linear-gradient(145deg, #080d18 0%, #0c1423 55%, #080d18 100%);
+  color: #edf4ff;
+}
+
+main, .main-content, .content, .container, .container-fluid {
+  color: inherit;
+}
+
+.navbar {
+  min-height: 68px;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background: rgba(8, 13, 24, .94) !important;
+  border-bottom: 1px solid rgba(148, 163, 184, .15);
+}
+
+.navbar-brand {
+  font-size: 1.08rem;
+  letter-spacing: .055em;
+}
+
+.navbar .nav-link {
+  padding: .55rem .85rem !important;
+  border-radius: 9px;
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff !important;
+  background: rgba(82, 139, 255, .12);
+}
+
+.glass, .card {
+  background: linear-gradient(145deg, rgba(20, 31, 50, .96), rgba(13, 21, 36, .96));
+  border: 1px solid rgba(148, 163, 184, .16);
+  border-radius: 18px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, .22), inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.card-header, .card-footer {
+  color: #eaf1ff;
+  background: rgba(255,255,255,.035);
+  border-color: rgba(148,163,184,.13);
+}
+
+.dashboard-heading {
+  padding: .35rem 0 .25rem;
+}
+
+.dashboard-heading h2 {
+  font-weight: 800;
+  letter-spacing: -.045em;
+}
+
+.dashboard-stat {
+  min-height: 158px;
+  padding: 1.4rem;
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(24, 37, 60, .96), rgba(14, 23, 40, .96));
+}
+
+.dashboard-stat-label {
+  color: #aebdd3;
+  font-size: .8rem;
+  letter-spacing: .035em;
+}
+
+.dashboard-stat-value {
+  font-size: clamp(2rem, 3vw, 2.65rem);
+  line-height: 1.1;
+}
+
+.dashboard-table-card {
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f4f7ff;
+}
+
+.text-secondary, .text-muted {
+  color: #9aaac2 !important;
+}
+
+.form-control, .form-select {
+  min-height: 46px;
+  color: #f1f5ff;
+  background-color: rgba(5, 10, 20, .72);
+  border: 1px solid rgba(148, 163, 184, .25);
+  border-radius: 10px;
+}
+
+.form-control:hover, .form-select:hover {
+  border-color: rgba(116, 164, 255, .5);
+}
+
+.form-control:focus, .form-select:focus {
+  color: #fff;
+  background-color: #0c1729;
+  border-color: #579cff;
+  box-shadow: 0 0 0 .22rem rgba(52, 140, 255, .17);
+}
+
+.btn {
+  min-height: 39px;
+  border-radius: 10px;
+  font-weight: 650;
+}
+
+.btn-gradient {
+  background: linear-gradient(110deg, #7658f5 0%, #347ff2 58%, #159ebc 100%);
+  border: 0;
+  box-shadow: 0 7px 20px rgba(52, 127, 242, .23);
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-secondary {
+  color: #e4edfb;
+  background: rgba(148, 163, 184, .15);
+  border-color: rgba(148, 163, 184, .2);
+}
+
+.table-responsive {
+  border-radius: 12px;
+}
+
+.table thead th {
+  color: #9eafc8;
+  background: rgba(255,255,255,.025);
+  font-size: .7rem;
+  letter-spacing: .1em;
+}
+
+.table tbody tr {
+  transition: background-color .18s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(72, 132, 230, .075);
+}
+
+.table tbody td {
+  color: #dce7f7;
+  border-color: rgba(148, 163, 184, .12);
+}
+
+.badge {
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.alert {
+  color: #edf4ff;
+  background: rgba(255,255,255,.055);
+  border-radius: 12px;
+}
+
+.auth-wrap {
+  width: min(100% - 2rem, 460px);
+  margin: clamp(2.5rem, 9vh, 5rem) auto;
+}
+
+.auth-wrap .glass {
+  padding: clamp(1.5rem, 4vw, 2.35rem) !important;
+  border-radius: 22px;
+}
+
+.auth-wrap h4 {
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+a {
+  transition: color .18s ease, opacity .18s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(53, 201, 220, .48);
+  outline-offset: 3px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar .nav-link {
+    margin-top: .2rem;
+  }
+
+  .dashboard-heading {
+    gap: 1rem;
+  }
+
+  .dashboard-stat {
+    min-height: 132px;
+    padding: 1.05rem;
+  }
+
+  .dashboard-stat-value {
+    font-size: 1.9rem;
+  }
+
+  .dashboard-table-card {
+    padding: 1rem;
+  }
+
+  .table {
+    min-width: 620px;
+  }
+
+  .auth-wrap {
+    margin-top: 1.5rem;
+  }
+}
